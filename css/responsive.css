@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+    .logo {
+        max-width: 80px;
+    }
+    body {
+        font-size: 14px;
+    }
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}

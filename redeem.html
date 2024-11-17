@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redeem Result</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <h1 data-lang-key="result-title">Redeem Result</h1>
+    </header>
+    <main>
+        <section id="result">
+            <p id="sessionId" data-lang-key="session-id"></p>
+            <p id="quotaRemaining" data-lang-key="quota-remaining"></p>
+            <p id="uploadLink" data-lang-key="upload-link"></p>
+        </section>
+        <section id="warnings">
+            <p data-lang-key="warning">Please keep your link safe and do not share it with others!</p>
+        </section>
+    </main>
+    <script>
+        // 确保 DOM 加载完成后执行
+        document.addEventListener('DOMContentLoaded', () => {
+            // 解析 URL 参数
+            const urlParams = new URLSearchParams(window.location.search);
+            const sessionId = urlParams.get('session_id');
+            const quotaRemaining = urlParams.get('quota');
+            const uploadLink = urlParams.get('upload_link');
+
+            // 确保参数存在后更新页面内容
+            if (sessionId && quotaRemaining && uploadLink) {
+                document.getElementById('sessionId').innerText = `Session ID: ${sessionId}`;
+                document.getElementById('quotaRemaining').innerText = `Quota Remaining: ${formatQuota(quotaRemaining)}`;
+                document.getElementById('uploadLink').innerHTML = `Upload Link: <a href="${uploadLink}" target="_blank">${uploadLink}</a>`;
+            } else {
+                // 如果缺少参数，显示错误提示
+                document.getElementById('result').innerHTML = '<p style="color:red;">Error: Missing required parameters.</p>';
+            }
+        });
+
+        // 格式化配额
+        function formatQuota(bytes) {
+            const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+            if (bytes === 0) return '0 Byte';
+            const i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
+            return `${(bytes / Math.pow(1024, i)).toFixed(2)} ${sizes[i]}`;
+        }
+    </script>
+</body>
+</html>

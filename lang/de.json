@@ -1,0 +1,20 @@
+{
+    "title": "IPFS Pandoro Verteilte Datenspeicherdienste",
+    "description": "IPFS Pandoro ist ein verteiltes Datenspeichersystem, das 2024 von BitSquirting eingeführt wurde. Es soll Benutzern den Zugang zum IPFS-Netzwerk für die Datenspeicherung erleichtern und die Vorteile der IPFS-Speichertechnologie zugänglich machen.",
+    "feature-1": "Mehrfache Replikate gewährleisten hohe Verfügbarkeit (Standard: 2 Replikate).",
+    "feature-2": "Nahtloser Zugriff über das IPFS-Netzwerk (Web3) oder öffentliche Gateways (Web2).",
+    "feature-3": "Uploads über Einlösecodes mit einer einjährigen Servicezeit.",
+    "cta-text": "Lösen Sie jetzt einen Code ein oder kaufen Sie einen und genießen Sie effiziente und sichere verteilte Speicherlösungen!",
+    "redeem-link": "Code einlösen",
+    "purchase-link": "Code kaufen",
+    "redeem-title": "Lösen Sie Ihren Code ein",
+    "redeem-label": "Geben Sie Ihren Code ein:",
+    "redeem-button": "Einlösen",
+    "warning": "Bitte bewahren Sie Ihren Link sicher auf! Er enthält wichtige Informationen. Teilen Sie ihn nicht mit anderen. Alle Daten, die über diesen Link hochgeladen werden, verbrauchen direkt Ihr Kontingent.",
+    "error-empty": "Der Code darf nicht leer sein.",
+    "error-invalid": "Ungültiger Code. Bitte geben Sie einen gültigen alphanumerischen Code ein.",
+    "error-code-invalid": "Code nicht erkannt. Bitte überprüfen Sie ihn und versuchen Sie es erneut.",
+    "error-redeem-failed": "Das Einlösen des Codes ist fehlgeschlagen. Bitte versuchen Sie es später erneut.",
+    "error-unexpected": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.",
+    "footer-text": "© 2024 BitSquirting. Alle Rechte vorbehalten."
+}

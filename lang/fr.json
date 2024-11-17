@@ -1,0 +1,20 @@
+{
+    "title": "Service de stockage de données distribué IPFS Pandoro",
+    "description": "IPFS Pandoro est un service de stockage de données distribué lancé par BitSquirting en 2024. Il vise à faciliter et à rendre accessible l'utilisation du réseau IPFS pour le stockage de données, et à profiter des avantages de la technologie de stockage IPFS.",
+    "feature-1": "Plusieurs copies assurent une haute disponibilité (par défaut : 2 copies).",
+    "feature-2": "Accès transparent via le réseau IPFS (Web3) ou des passerelles publiques (Web2).",
+    "feature-3": "Quotas de téléchargement via des codes de rédemption pour une période de service d'un an.",
+    "cta-text": "Échangez ou achetez un code dès maintenant et commencez à profiter d'un stockage distribué efficace et sécurisé !",
+    "redeem-link": "Échanger un Code",
+    "purchase-link": "Acheter un Code",
+    "redeem-title": "Échanger votre Code",
+    "redeem-label": "Entrez votre code :",
+    "redeem-button": "Échanger",
+    "warning": "Veuillez garder votre lien en sécurité ! Il contient des informations importantes. Ne le partagez pas avec d'autres. Toute donnée téléchargée via ce lien consommera directement votre quota.",
+    "error-empty": "Le code ne peut pas être vide.",
+    "error-invalid": "Code invalide. Veuillez entrer un code alphanumérique valide.",
+    "error-code-invalid": "Code non reconnu. Veuillez vérifier et réessayer.",
+    "error-redeem-failed": "Échec de l'échange. Veuillez réessayer plus tard.",
+    "error-unexpected": "Une erreur inattendue est survenue. Veuillez réessayer plus tard.",
+    "footer-text": "© 2024 BitSquirting. Tous droits réservés."
+}

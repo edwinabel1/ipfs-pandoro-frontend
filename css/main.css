@@ -1,0 +1,123 @@
+/* 通用样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+#language-selector {
+    position: relative;
+}
+
+/* 主体内容 */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 分段样式 */
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.features {
+    margin-bottom: 20px;
+}
+
+.features h2 {
+    font-size: 1.5rem;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features li {
+    margin: 5px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.features li::before {
+    content: '✔️';
+    position: absolute;
+    left: 0;
+    color: #28a745;
+}
+
+/* CTA 样式 */
+.cta {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta .btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
