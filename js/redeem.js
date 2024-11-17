@@ -45,10 +45,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const result = await response.json();
 
-            if (!response.ok || !result.success) {
-                displayError(result.message || langStrings['error-redeem-failed'] || 'Redeem failed. Please try again.');
-                return;
+        // 如果返回错误或结果不成功
+        if (!response.ok || !result.success) {
+            let errorMsg;
+
+            // 检查是否为 "兑换码无效"
+            if (response.status === 400 && result.message === '兑换码无效') {
+                errorMsg = langStrings['error-invalid'] || 'Invalid redemption code.';
+            } else {
+                errorMsg = langStrings['error-redeem-failed'] || 'Redeem failed. Please try again.';
             }
+
+            displayError(errorMsg);
+            return;
+        }
 
             // 如果兑换成功，生成结果页链接并跳转
             const { session_id, quota_remaining } = result.data;
